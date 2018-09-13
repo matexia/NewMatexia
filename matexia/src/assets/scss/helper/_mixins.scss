@@ -1,0 +1,67 @@
+/**
+ * mixin
+ * @author 请叫我蛋蛋哥 <76573917@qq.com>
+ * @created 2016-12-29 13:20
+ */
+
+// ## 清除浮动
+@mixin clearfix {
+    &:before,
+    &:after {
+        content: ' ';
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+// ## 滚动效果
+@mixin scrollable() {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+// ## 响应图片
+@mixin img-responsive ($display: block) {
+    max-width: 100%;
+    height: auto;
+    display: $display;
+}
+
+// ## 单行文本溢出省略
+@mixin ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+// ## 多行文本溢出显示省略号
+@mixin multi-ellipsis ($lines: 2) {
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+}
+
+// ## 禁用外观
+@mixin no-appearance {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+// for link https://www.w3cplus.com/preprocessor/Sass-3-3-new-feature-at-root-bem.html
+// ## elements get appended with "__" and the $name
+@mixin e($name) {
+    @at-root #{&}__#{$name} {
+        @content;
+    }
+}
+// ## modifiers get appended with "--" and the $name
+@mixin m($name) {
+    @at-root #{&}--#{$name} {
+        @content;
+    }
+}

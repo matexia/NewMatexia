@@ -1,0 +1,142 @@
+/**
+ * icon font
+ * @author 请叫我蛋蛋哥 <76573917@qq.com>
+ * @created 2017-04-14 12:21
+ */
+@font-face {
+    font-family: 'iconfont';
+    src: url('assets/font/iconfont.eot'); /* IE9*/
+    src: url('assets/font/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('assets/font/iconfont.woff') format('woff'), /* chrome, firefox */
+         url('assets/font/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+         url('assets/font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+
+}
+.icon {
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'iconfont' !important;
+    speak: none;
+    line-height: 1;
+    vertical-align: middle;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-stroke: .2px transparent;
+
+    &-query:before {
+        content: '\e6de';
+    }
+    &-export:before {
+        content: '\e63b';
+    }
+    &-order:before {
+        content: "\e63c";
+    }
+    &-track:before {
+        content: "\e603";
+    }
+    &-loader:before {
+        content: "\e8fc";
+    }
+    &-dianhua1:before {
+        content: "\e61b";
+    }
+    &-wechat:before {
+        content: "\e7e5";
+    }
+    &-shouji:before {
+        content: "\e600";
+    }
+    &-chengyunshangjinzhu:before {
+        content: "\e608";
+    }
+    &-biaozhunhuatuochefuwu:before {
+        content: "\e60a";
+    }
+    &-pingtaiduijie:before {
+        content: "\e609";
+    }
+    &-kaifangpingtai:before {
+        content: "\e617";
+    }
+    &-zhinengyunjia:before {
+        content: "\e619";
+    }
+    &-dijiazhuanxian:before {
+        content: "\e613";
+    }
+    &-quanchengjiankong:before {
+        content: "\e612";
+    }
+    &-fuwubaozhang:before {
+        content: "\e618";
+    }
+    &-gphq2:before {
+        content: "\e62f";
+    }
+    &-hq40:before {
+        content: "\e62e";
+    }
+    &-gp40:before {
+        content: "\e62d";
+    }
+    &-gphq:before {
+        content: "\e628";
+    }
+    &-combined:before {
+        content: "\e630";
+    }
+    &-alipay:before {
+        content: "\e665";
+    }
+    &-wechatPay:before {
+        content: "\e631";
+    }
+    &-subscribe:before {
+        content: "\e61f";
+    }
+    &-qq:before {
+        content: "\e604";
+    }
+    &-swiper-btn-next:before {
+        content: "\e625";
+    }
+    &-swiper-btn-prev:before {
+        content: "\e624";
+    }
+    &-huoche:before {
+        content: "\e622";
+    }
+    &-chuan:before {
+        content: "\e620";
+    }
+    &-timeline-arrows:before {
+        content: "\e61e";
+    }
+    &-security:before {
+        content: "\e633";
+    }
+    &-suo:before {
+        content: "\e657";
+    }
+    &-pc:before {
+        content: "\e62b";
+    }
+    &-qr:before {
+        content: "\e642";
+    }
+    &-price:before {
+        content: "\e602";
+    }
+    &-track:before {
+        content: "\e603";
+    }
+    &-dispatch:before {
+        content: "\e601";
+    }
+}
